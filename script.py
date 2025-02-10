@@ -77,7 +77,7 @@ train_steps = NUM_EPOCH * len(dataloader_train) # can be customized to a fixed n
 train_steps = max(train_steps, 700000)
 print('train_steps:',train_steps)
 # save settings
-PATH_MODEL = '../saved_models/fastmri_knee/diffusion_'+str(img_mode)+'_'+str(acc)+'x_T'+str(time_steps)+'_S'+str(train_steps)+'/'
+PATH_MODEL = './saved_models/fastmri_knee/diffusion_'+str(img_mode)+'_'+str(acc)+'x_T'+str(time_steps)+'_S'+str(train_steps)+'/'
 create_path(PATH_MODEL)
 
 # construct diffusion model
